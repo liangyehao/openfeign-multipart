@@ -1,6 +1,7 @@
 package com.liang.controller;
 
 import com.liang.entity.dto.FileDTO;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,5 +20,11 @@ public class MultipartFileController {
     public String uploadFile(FileDTO fileDTO){
         System.out.println(fileDTO);
         return "ok";
+    }
+
+    @GetMapping("/testFeign")
+    private String testFeign(){
+        System.out.println("---------- test feign in provider");
+        return "---------- test feign in provider";
     }
 }
