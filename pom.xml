@@ -11,6 +11,7 @@
 
     <modules>
         <module>provider8080</module>
+        <module>consumer80</module>
     </modules>
 
     <dependencyManagement>

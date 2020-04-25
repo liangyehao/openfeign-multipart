@@ -1,3 +1,3 @@
-/openfeign-multipart.iml
+**/*.iml
 /.idea/
-/**/target/
+**/target/
